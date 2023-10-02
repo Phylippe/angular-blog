@@ -6,11 +6,15 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./small-card.component.css']
 })
 export class SmallCardComponent implements OnInit {
-  @Input()
-  photoCover:string ="https://disneyplusbrasil.com.br/wp-content/uploads/2021/07/Series-Marvel-Disney-Plus-1024x576.jpg"
-  @Input()
-  cardTitle:string ="NOVA SERIE ANUNCIADA"
 
+  @Input()
+  photoCover:string = ""
+
+  @Input()
+  cardTitle:string = ""
+
+  @Input()
+  Id:string="0"
 
   constructor() { }
 
